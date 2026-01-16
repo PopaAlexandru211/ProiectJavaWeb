@@ -14,7 +14,10 @@ eq '/about.jsp' ? ' active' : ''}" aria-current="page" href="${pageContext.reque
             <a class="nav-link ${activePage eq 'Cars' ? 'active' : ''}"
                href="${pageContext.request.contextPath}/Cars">Cars</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link ${activePage eq 'Users' ? 'active' : ''}"
+               href="${pageContext.request.contextPath}/Users">Users</a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">Link</a>
@@ -22,7 +25,7 @@ eq '/about.jsp' ? ' active' : ''}" aria-current="page" href="${pageContext.reque
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
-        </ul class="navbar-nav">
+        </ul>
         <li class ="nav-item">
           <a class="nav-item" href = "${pageContext.request.contextPath}/Login">Login</a>
         </li>
