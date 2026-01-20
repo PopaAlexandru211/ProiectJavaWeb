@@ -66,6 +66,11 @@ public class CarsBean {
         CarDto carDto = entityManager.find(CarDto.class, id);
         return carDto;
     }
+    public CarDto findByIdCar(Long id) {
+        LOG.info("findByIdCar");
+        CarDto carDto = entityManager.find(CarDto.class, id);
+        return carDto;
+    }
     public void updateCar(Long carId, String licensePlate, String parkingSpot, Long userid) {
         LOG.info("updateCar");
 
